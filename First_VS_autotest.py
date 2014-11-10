@@ -37,7 +37,7 @@ class TestSummaryVSSearch(unittest.TestCase):
         #self.assertIn('a', vs_detail_link.text)
 
         ##self.driver.implicitly_wait(10)
-        #self.driver.get("http://ordinateur-occasion.vivastreet.com/informatique-pda")
+        #Here is the text that is commented out
         self.driver.find_element_by_xpath(r'//input[@id="vs_search_keywords"]').send_keys("Test")
         category_dropdown = Select(self.driver.find_element_by_id("vs-cat-dropdown-1"))
         category_dropdown.select_by_value('74')
